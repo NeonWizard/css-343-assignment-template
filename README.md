@@ -1,4 +1,4 @@
-# CSS-342 Assignment Template
+# CSS-343 Assignment Template
 A template project for CSS 343 homework assignments which implements a basic stack.
 
 ## Usage
