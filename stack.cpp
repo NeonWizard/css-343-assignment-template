@@ -5,7 +5,7 @@ using namespace std;
 
 Stack::Stack() : _size(0) {}
 
-Stack::Stack(const Stack& other) {
+Stack::Stack(const Stack &other) {
   _size = other._size;
   _data = other._data;
 }
@@ -25,14 +25,8 @@ int Stack::pop() {
   return x;
 }
 
-int Stack::peek() {
-  return _data.back();
-}
+int Stack::peek() { return _data.back(); }
 
-bool Stack::isEmpty() {
-  return _size == 0;
-}
+bool Stack::isEmpty() { return _size == 0; }
 
-int Stack::getSize() {
-  return _size;
-}
+int Stack::getSize() { return _size; }
