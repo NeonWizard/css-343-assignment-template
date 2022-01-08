@@ -19,16 +19,16 @@ run: main
 	echo "*** running main"
 	./main
 
-clang-tidy: *.cpp
+clang-tidy: *.cpp *.h
 	echo
 	echo "*** running clang-tidy using options from .clang-tidy"
 	clang-tidy --version
-	clang-tidy *.cpp -- -std=c++11
+	clang-tidy *.cpp *.h -- -std=c++11
 
-clang-format: *.cpp
+clang-format: *.cpp *.h
 	echo
 	echo "*** running clang-format to format all files in-place"
-	clang-format -i *.cpp
+	clang-format -i *.cpp *.h
 
 gdb: main
 	gdb -ex=r --args main
