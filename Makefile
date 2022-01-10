@@ -23,7 +23,7 @@ clang-tidy: *.cpp *.h
 	echo
 	echo "*** running clang-tidy using options from .clang-tidy"
 	clang-tidy --version
-	clang-tidy *.cpp *.h -- -std=c++11
+	clang-tidy *.cpp *.h -- -std=c++11 -x c++
 
 clang-format: *.cpp *.h
 	echo
