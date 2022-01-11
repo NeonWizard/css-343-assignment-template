@@ -1,0 +1,11 @@
+{
+  "files.associations": {
+    "vector": "cpp",
+    "ostream": "cpp",
+    "*.tcc": "cpp",
+    "deque": "cpp",
+    "string": "cpp"
+  },
+  "editor.detectIndentation": false,
+  "editor.tabSize": 4
+}

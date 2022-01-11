@@ -28,7 +28,7 @@ clang-tidy: *.cpp *.h
 clang-format: *.cpp *.h
 	echo
 	echo "*** running clang-format to format all files in-place"
-	clang-format -i *.cpp *.h
+	clang-format -style='{ColumnLimit: 80, IndentWidth: 4}' -i *.cpp *.h
 
 gdb: main
 	gdb -ex=r --args main

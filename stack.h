@@ -11,7 +11,7 @@ class Stack {
     Stack();
 
     // copy constructor
-    Stack(const Stack& other);
+    Stack(const Stack &other);
 
     // destructor
     ~Stack();
